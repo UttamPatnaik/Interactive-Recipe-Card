@@ -1,0 +1,111 @@
+/* Tablet Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+    
+    .recipe-title {
+        font-size: 2em;
+    }
+    
+    .recipe-meta {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .recipe-image {
+        height: 250px;
+    }
+    
+    .cooking-controls {
+        justify-content: center;
+    }
+    
+    .start-cooking-btn, .next-step-btn, .reset-btn {
+        flex: 1;
+        min-width: 120px;
+    }
+}
+
+/* Mobile Styles */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    
+    .recipe-header {
+        padding: 20px;
+    }
+    
+    .recipe-title {
+        font-size: 1.8em;
+    }
+    
+    .recipe-meta span {
+        font-size: 0.9em;
+        padding: 6px 12px;
+    }
+    
+    .recipe-image {
+        height: 200px;
+    }
+    
+    .toggle-btn {
+        font-size: 1.1em;
+        padding: 15px;
+    }
+    
+    .ingredient-item {
+        font-size: 0.9em;
+        padding: 10px 12px;
+    }
+    
+    .step-item {
+        font-size: 0.9em;
+        padding: 12px 12px 12px 45px;
+    }
+    
+    .step-item::before {
+        width: 25px;
+        height: 25px;
+        left: 12px;
+        top: 12px;
+        font-size: 0.8em;
+    }
+    
+    .cooking-controls {
+        flex-direction: column;
+    }
+    
+    .start-cooking-btn, .next-step-btn, .reset-btn {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    
+    .timer {
+        font-size: 2em;
+    }
+    
+    .progress-text {
+        font-size: 0.9em;
+    }
+}
+
+/* Large Desktop Styles */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 900px;
+    }
+    
+    .recipe-title {
+        font-size: 3em;
+    }
+    
+    .recipe-image {
+        height: 400px;
+    }
+    
+    .ingredients-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Recipe Card - Chocolate Cake</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="recipe-card">
+            <!-- Header Section -->
+            <div class="recipe-header">
+                <h1 class="recipe-title">Chocolate Cake</h1>
+                <div class="recipe-meta">
+                    <span class="prep-time">⏱️ 45 mins</span>
+                    <span class="serving-size">👥 8 servings</span>
+                </div>
+            </div>
+
+            <!-- Recipe Image -->
+            <div class="recipe-image">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chocolate Cake" id="recipeImg">
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+                <span class="progress-text" id="progressText">Ready to start cooking!</span>
+            </div>
+
+            <!-- Ingredients Section -->
+            <div class="section ingredients-section">
+                <button class="toggle-btn" id="ingredientsToggle">
+                    <span>📝 Show Ingredients</span>
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="content-area" id="ingredientsContent">
+                    <ul class="ingredients-list">
+                        <li class="ingredient-item">2 cups all-purpose flour</li>
+                        <li class="ingredient-item">1¾ cups granulated sugar</li>
+                        <li class="ingredient-item">¾ cup unsweetened cocoa powder</li>
+                        <li class="ingredient-item">2 teaspoons baking soda</li>
+                        <li class="ingredient-item">1 teaspoon baking powder</li>
+                        <li class="ingredient-item">1 teaspoon salt</li>
+                        <li class="ingredient-item">2 large eggs</li>
+                        <li class="ingredient-item">1 cup buttermilk</li>
+                        <li class="ingredient-item">1 cup strong black coffee</li>
+                        <li class="ingredient-item">½ cup vegetable oil</li>
+                        <li class="ingredient-item">1 teaspoon vanilla extract</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Steps Section -->
+            <div class="section steps-section">
+                <button class="toggle-btn" id="stepsToggle">
+                    <span>👨‍🍳 Show Instructions</span>
+                    <span class="arrow">▼</span>
+                </button>
+                <div class="content-area" id="stepsContent">
+                    <div class="cooking-controls">
+                        <button class="start-cooking-btn" id="startCookingBtn">🚀 Start Cooking</button>
+                        <button class="next-step-btn" id="nextStepBtn" style="display: none;">Next Step ➡️</button>
+                        <button class="reset-btn" id="resetBtn" style="display: none;">🔄 Reset</button>
+                    </div>
+                    <ol class="steps-list" id="stepsList">
+                        <li class="step-item">Preheat your oven to 350°F (175°C). Grease and flour two 9-inch round cake pans.</li>
+                        <li class="step-item">In a large bowl, whisk together flour, sugar, cocoa powder, baking soda, baking powder, and salt.</li>
+                        <li class="step-item">In another bowl, beat eggs, then mix in buttermilk, coffee, oil, and vanilla extract.</li>
+                        <li class="step-item">Gradually add the wet ingredients to the dry ingredients, mixing until just combined.</li>
+                        <li class="step-item">Divide the batter evenly between the prepared pans.</li>
+                        <li class="step-item">Bake for 30-35 minutes, or until a toothpick inserted in the center comes out clean.</li>
+                        <li class="step-item">Cool in pans for 10 minutes, then turn out onto wire racks to cool completely.</li>
+                        <li class="step-item">Frost with your favorite chocolate frosting and enjoy!</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Timer Section (Bonus Feature) -->
+            <div class="timer-section" id="timerSection" style="display: none;">
+                <div class="timer-display">
+                    <h3>⏰ Cooking Timer</h3>
+                    <div class="timer" id="timer">45:00</div>
+                    <button class="timer-btn" id="startTimerBtn">Start Timer</button>
+                    <button class="timer-btn" id="pauseTimerBtn" style="display: none;">Pause</button>
+                </div>
+            </div>
+
+            <!-- Print Section (Bonus Feature) -->
+            <div class="print-section">
+                <button class="print-btn" id="printBtn">🖨️ Print Recipe</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
