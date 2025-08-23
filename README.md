@@ -40,17 +40,18 @@ A beautifully designed, fully responsive interactive recipe card with smooth ani
 ---
 
 ## 📁 Project Structure
+```plaintext
 interactive-recipe-card/
-├── index.html # Main HTML file
+├── index.html              # Main HTML file
 ├── css/
-│ ├── style.css # Main stylesheet with animations
-│ └── responsive.css # Media queries for responsive design
+│   ├── style.css           # Main stylesheet with animations
+│   └── responsive.css      # Media queries for responsive design
 ├── js/
-│ └── script.js # JavaScript functionality
+│   └── script.js           # JavaScript functionality
 ├── images/
-│ └── chocolate-cake.jpg # Recipe image (placeholder)
-└── README.md # Project documentation
-
+│   └── chocolate-cake.jpg  # Recipe image (placeholder)
+└── README.md               # Project documentation
+```
 ---
 
 ## 📖 How to Use
